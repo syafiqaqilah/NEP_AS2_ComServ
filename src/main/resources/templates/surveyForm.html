@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+<link rel="stylesheet" th:href="@{ /css/site.css }">
+    <title>Community Service Survey</title>
+  </head>
+  <body>
+    <p>Basic Identification</p>
+    <form action="formsent.html">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="ID number">Identification Number:</label><br>
+      <input type="text" id="ID no" name="ID Number"><br>
+      <label for="phone number">Phone Number:</label><br>
+      <input type="text" id="phone" name="phone"><br>
+      <label for="Email">Email: </label><br>
+      <input type="text" id="Email" name="Email">
+
+<p>Gender</p>
+
+      <input type="radio" id="Male" name="fav_language" value="Male">
+      <label for="Male">Male</label><br>
+      <input type="radio" id="Female" name="fav_language" value="Female">
+      <label for="Female">Female</label><br>
+
+
+<p>Skills and Qualifications </p>
+
+      <label for="Skills">Qualifications:</label><br>
+      <input type="text" name="Qualifications" ><br>
+      <label for="Skills">Skills:</label><br>
+      <input type="text" name="Skills" >
+
+
+
+
+<p>Organisation of Choice</p>
+<input type="radio" id="CommunityServiceOrg1" name="fav_language" value="Org1">
+<label for="Male">Org 1</label><br>
+<input type="radio" id="CommunityServiceOrg2" name="fav_language" value="Org2">
+<label for="Female">Org 2</label><br>
+
+<a href="#"><input type="submit" value="Submit"></a>
+
+</form>
+
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <link rel="stylesheet" th:href="@{ /css/site.css }">
+    <title>Community Service</title>
+</head>
+
+<body>
+    <h1>Welcome to the NEP Community Service Website</h1>
+
+    <h1>Would you like to help out the local community?</h1>
+
+    <h1>Do join these Organisations that helps the local community. </h1>
+
+    <table>
+      <tbody>
+        <td><a th:href="@{ /CommunityServiceOrg1 }"><img th:src="@{ /images/pic 1.png }" alt=""></a></td>
+        <td><a th:href="@{ /CommunityServiceOrg2 }"><img th:src="@{ /images/pic 2.png}" alt=""></a></td>
+      </tbody>
+    </table>
+
+
+    <a th:href="@{ /surveyForm}"><h2>Join us</h2></a>
+
+
+    <p><h5><a th:href="@{ /indexPage}">Index Page</a></h5></p>
+</body>
+
+</html>
