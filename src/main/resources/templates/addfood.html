@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{ /css/style.css}">
+    <meta charset="utf-8">
+    <title>Add Food</title>
+  </head>
+  <body>
+    <nav>
+      <li><a th:href="@{ /}">Home</a></li>
+      <li><a th:href="@{ /list}">List</a></li>
+      <li><a th:href="@{ /addfood}">Add Review</a></li>
+      <li><a th:href="@{ /aboutus}">About Us</a></li>
+    </nav>
+    <header>Some topic</header>
+    <article>
+      <h1>Feedback Page</h1><br>
+      <fieldset>
+        <legend></legend><br>
+        <label>Name:</label>
+        <input class="colorin" type="text" name="name" /><br><br>
+        <label>Review:</label>
+        <textarea class="colorin" id="feedback" name="review"></textarea><br><br>
+        <label>File:</label>
+        <input class="colorin" type="text" name="file" /><br><br>
+        <label>Show:</label>
+        <input class="colorin" type="radio" name="instock" value="true"> True
+        <input class="colorin" type="radio" name="instock" value="false"> False<br><br>
+        <button class="colorin" type="submit">Add</button>
+      </fieldset>
+      <label th:if="${success == true}">Add new product successful</label>
+      <label th:if="${fail == true}">Add new product failed</label>
+    </article>
+     <footer>@ <a href="aboutme.html">NEP AS2</a> | Last updated: 15th May 2022</footer>
+  </body>
+</html>
